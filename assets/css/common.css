@@ -1,0 +1,507 @@
+@charset "UTF-8";
+/*!
+ * ress.css • v4.0.0
+ * MIT License
+ * github.com/filipelinhares/ress
+ */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap");
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+*, :after, :before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+:after, :before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  overflow: visible;
+  height: 0;
+  color: inherit;
+}
+
+details, main {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+small {
+  font-size: 80%;
+}
+
+[hidden] {
+  display: none;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+}
+
+pre {
+  font-size: 1em;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  border-color: inherit;
+  text-indent: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+}
+
+optgroup {
+  font-weight: 700;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[role=button], [type=button], [type=reset], [type=submit], button {
+  cursor: pointer;
+  color: inherit;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline-width: 0;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-ms-value {
+  color: currentColor;
+}
+
+legend {
+  border: 0;
+  color: inherit;
+  display: table;
+  white-space: normal;
+  max-width: 100%;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  color: inherit;
+  font: inherit;
+}
+
+img {
+  border-style: none;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[aria-busy=true] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled=true] {
+  cursor: default;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----- break point ----- */
+/* ----- container width ----- */
+/* ----- margin-top/bottom ----- */
+/* ----- padding-top/bottom ----- */
+/* ----- font-size ----- */
+/* ----- line-height, letter-spacing ----- */
+/* ----- box-shadow, border-radius ----- */
+.js-x-scroll {
+  cursor: grab;
+}
+
+/* -------------------------------------------- */
+/* ------------ zen kaku gothic new ----------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* --------------- Zen Old Mincho ------------- */
+/* -------------------------------------------- */
+/* ----------------------- fadein animation ----------------------- */
+/* ------------------- infinite slide animation ------------------- */
+@keyframes infinite-slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes infinite-slide2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+/* ------------------------ delay animation ------------------------ */
+.--delay1 {
+  transition-delay: 0.1s;
+}
+
+.--delay2 {
+  transition-delay: 0.2s;
+}
+
+.--delay3 {
+  transition-delay: 0.5s;
+}
+
+.--delay4 {
+  transition-delay: 0.4s;
+}
+
+.--delay5 {
+  transition-delay: 0.5s;
+}
+
+.--delay6 {
+  transition-delay: 0.6s;
+}
+
+.--delay7 {
+  transition-delay: 0.7s;
+}
+
+.--delay8 {
+  transition-delay: 0.8s;
+}
+
+.--delay9 {
+  transition-delay: 0.9s;
+}
+
+.--delay10 {
+  transition-delay: 1s;
+}
+
+.--delay11 {
+  transition-delay: 1.1s;
+}
+
+.--delay12 {
+  transition-delay: 1.2s;
+}
+
+.--delay13 {
+  transition-delay: 1.5s;
+}
+
+.--delay14 {
+  transition-delay: 1.4s;
+}
+
+.--delay15 {
+  transition-delay: 1.5s;
+}
+
+.--delay16 {
+  transition-delay: 1.6s;
+}
+
+.--delay17 {
+  transition-delay: 1.7s;
+}
+
+.--delay18 {
+  transition-delay: 1.8s;
+}
+
+.--delay19 {
+  transition-delay: 1.9s;
+}
+
+.--delay20 {
+  transition-delay: 2s;
+}
+
+.fix {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+a,
+button,
+span {
+  transition: all 0.4s ease;
+  color: #0F0F0F;
+}
+a:before, a:after,
+button:before,
+button:after,
+span:before,
+span:after {
+  transition: all 0.4s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  vertical-align: bottom;
+  transition: all 0.4s ease;
+}
+
+svg {
+  transition: all 0.4s ease;
+}
+svg path {
+  transition: all 0.4s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  word-wrap: break-word;
+}
+
+body {
+  letter-spacing: 0.05em;
+  position: relative;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0F0F0F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+p {
+  line-height: 2;
+}
+
+@media only screen and (max-width: 767px) {
+  br.pc-br {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767px) {
+  br.sp-br {
+    display: none;
+  }
+}
+
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 90px;
+  }
+}
+.header__inner {
+  height: 100%;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header__logo h1 a {
+  display: block;
+  height: 40px;
+}
+.header__logo h1 a img {
+  width: auto;
+  height: 100%;
+}
+.header__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 60px;
+  border: 1px solid #0F0F0F;
+  transition: all 0.4s ease;
+}
+@media only screen and (max-width: 600px) {
+  .header__contact {
+    width: 140px;
+    height: 40px;
+  }
+}
+@media (hover: hover) {
+  .header__contact:hover {
+    background-color: #0F0F0F;
+  }
+  .header__contact:hover span {
+    color: #fff;
+  }
+}
+@media (hover: none) {
+  .header__contact:active {
+    background-color: #0F0F0F;
+  }
+  .header__contact:active span {
+    color: #fff;
+  }
+}
+.header__contact a span {
+  color: #0F0F0F;
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media only screen and (max-width: 600px) {
+  .header__contact a span {
+    font-size: 14px;
+  }
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 80px;
+  }
+}
+.footer__inner small {
+  font-size: 10px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}/*# sourceMappingURL=common.css.map */
